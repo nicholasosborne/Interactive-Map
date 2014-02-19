@@ -1,0 +1,9 @@
+Options +FollowSymLinks +Indexes
+AuthName "default"
+AuthType Basic
+Satisfy Any
+order deny,allow
+deny from all
+allow from 57.77.138.2
+AuthUserFile /var/www/tour-maps/dww/admin/.htpasswd
+Require valid-user

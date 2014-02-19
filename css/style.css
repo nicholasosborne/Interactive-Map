@@ -1,0 +1,642 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*  Main  */
+
+body {
+ background:#121212;
+ color:#000;
+ font-family: Georgia, serif;
+ font-weight: 300;
+ font-size:13px; 
+ height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#container {
+ width:100%; /*  Change to desired width :)  */
+ position: relative;
+}
+
+#map {
+	height: 1200px;
+	z-index: 1;
+}
+
+#legend {
+	height: 53px;
+	width: 287px;
+	background: url('../images/legend.png') no-repeat top center;
+	position: fixed;
+	top: 10px;
+	left: 50px;
+	z-index: 100;
+}
+
+
+#sidebar {
+	width: 410px;
+	height: 100%;
+	background: url('../images/sidebar.png') repeat-y top right;
+	position: fixed;
+	top: 0px;
+	right: 25px;
+	padding: 5px;
+	z-index: 99;
+	overflow: visible;
+}
+
+#logo {
+	opacity: 0.7;
+	width: 90px;
+	height: 118px;
+	top: 10px;
+	right: 10px;
+	padding: 10px;
+	position: fixed;
+	z-index: 99;
+}
+
+#social {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	z-index: 105;
+	padding: 10px;
+	background: rgba(0,0,0,0.5);
+}
+
+.fb-like {
+	vertical-align: top;
+	margin: 5px 0 0 0;
+}
+
+.itunes {
+	margin: 5px 0 0 10px;
+	display: inline-block;
+}
+
+a.itunesBTN {
+	background: url(../images/dww_itunes.png) no-repeat;
+    display: block;
+    width: 119px;
+    height: 20px;
+}
+
+/*.itunesBTN:hover {
+	background: url(../images/itunes.png) 0px -31px no-repeat;
+  display: block;
+  width: 237px;
+  height: 29px;
+	outline: none; /* hide dotted outline in Firefox 
+}*/
+
+.merch {
+	display: inline-block;
+}
+
+a.merchBTN {
+	margin: 5px 10px 0 30px;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 5px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	vertical-align: top;
+}
+
+.merchBTN:hover {
+	color: #feca08;
+}
+
+#contentholder {
+	padding-top: 200px;
+	background: url('../images/dww_tour.png') top center no-repeat;
+	width: 380px;
+	height: 100%;
+	margin-left: 40px;
+	margin-top: 25px;
+	padding-bottom: 30px;
+}
+
+.holderContent {
+	margin: 0 auto;
+	padding: 8px;
+	text-align: center;
+}
+
+.date {
+	margin-top: 6px;
+	padding-top: 10px;
+	width: 324px;
+	height: 20px; 
+	border-bottom: 1px solid #999999;
+}
+
+.venue {
+	padding-top: 10px;
+	width: 325px;
+	height: 90px;
+	
+	}
+	
+.venue span{
+margin-bottom: 8px;
+display: block;
+
+}	
+
+.dateText {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 18px;
+	line-height: 25px;
+	color: #ece5df;
+	font-weight: bold;
+}
+
+.venueText {
+	font-family: 'Pathway Gothic One', sans-serif;
+	letter-spacing: 1px;
+	font-size: 26px;
+	line-height: 24px;
+	color: #feca08;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+
+.venueInfo {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 15px;
+	color: #ece5df;
+	text-transform: uppercase;
+}
+
+#prebuttons {
+	display: none;
+	margin: 0 auto;
+	width: 316px;
+	position: relative;
+	top: -10px;
+	/*padding-bottom: 25px;*/
+}
+
+a.purchase {
+	background-color: #feca08;
+	-webkit-transition:background-color 0.3s linear;
+  	display: block;
+  	width: 316px;
+  	height: 32px; 
+	margin-bottom: 8px;
+	cursor: pointer;
+	text-align: center;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	padding-top: 8px;
+}
+
+a.purchase:hover {
+	outline: none; /* hide dotted outline in Firefox */
+	background-color: #f5e67d;
+  	display: block;
+  	width: 316px;
+  	height: 32px;
+}
+
+a.facebook {
+	background: #3b5998 url(../images/rsvp.png) center no-repeat;
+	-webkit-transition:background-color 0.3s linear;
+  	display: block;
+  	width: 316px;
+  	height: 32px;
+	margin-bottom: 8px;
+	cursor: pointer;
+	text-align: center;
+	font-family: ;
+	font-size: 19px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	padding-top: 8px;
+	
+}
+
+a.facebook:hover {
+	background: #324a80 url(../images/rsvp.png) center no-repeat;
+  	display: block;
+  	width: 316px;
+  	height: 32px;
+	outline: none; /* hide dotted outline in Firefox */
+}
+
+#closebtn {
+	width: 141px;
+	height: 46px;
+	position: relative;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+a.welcomeclose {
+	background-color: #feca08;
+	-webkit-transition:background-color 0.3s linear;
+  	display: block;
+  	width: 141px;
+  	height: 20px;
+  	cursor: pointer;
+	text-align: center;
+	font-family: 'Pathway Gothic One', sans-serif;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #000000;
+	text-decoration: none;	
+	text-transform: uppercase;
+}
+
+
+a.welcomeclose:hover {
+	background-color: #f5e67d;
+  	display: block;
+	outline: none; /* hide dotted outline in Firefox */
+}
+
+
+.shownav {
+	margin-top: -25px;
+	display: table;
+	margin-left: 32px;
+	
+}
+
+#showlist ul {
+	list-style-type: none;
+	width: 325px;
+	
+}
+
+#showlist li {
+	display: inline;
+list-style-type: none;
+padding-left: 0px;
+}
+
+#showlist li:first-child {
+	padding-right: 55px;
+}
+
+.showBtnprev {
+	margin-top: 20px;
+	float: left;
+	display: block;
+	border: 0 none;
+	cursor: pointer;
+	text-align: center;
+	font-size: 13px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	background-color: #2c2c2c;
+	-webkit-transition:background-color 0.3s linear;
+  	width: 128px;
+  	height: 29px;
+}
+
+.showBtnprev:hover {
+	margin-top: 20px;
+	background-color: #2c2c2c;
+  	width: 128px;
+  	height: 29px;
+  	cursor: pointer;
+}
+
+.showBtnnext {
+	margin-top: 20px;
+	display: block;
+	float: right;
+	border: 0 none;
+	cursor: pointer;
+	text-align: center;
+	font-size: 13px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #ffffff;
+	background-color: #2c2c2c;
+	-webkit-transition:background-color 0.3s linear;
+  	width: 128px;
+  	height: 29px;
+}
+
+.showBtnnext:hover {
+	margin-top: 20px;
+	background-color: #2c2c2c;
+  	width: 128px;
+  	height: 29px;
+  	cursor: pointer;
+}
+
+.grey {
+	background: #999999;
+	width: 158px;
+}
+
+#photoHolder {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 358px;
+	height: 190px;
+	display: none;
+	}
+	
+.phototitle {
+  display: block;
+  color: #FFF;
+  font-size: 14px;
+  width: 324px;
+  height: 19px;
+	margin-left: 25px;
+	margin-bottom: 8px;
+	border-bottom: #FFF 1px solid;
+	
+}
+
+.fanphotos {
+	margin: 0 auto;
+	display: table;
+	margin-left: 30px;
+	
+}
+
+#gallery ul {
+	list-style-type: none;
+	min-width: 340px;
+	padding-top: 10px;
+}
+
+#gallery li {
+	display: inline;
+	padding-right: 4px;
+	
+}
+
+#gallery img {
+	margin-top: 2px;
+	margin-right: 3px;
+	border: #000000 2px solid;
+}
+
+.viewBTN {
+	margin-top: 10px;
+	width: 70px;
+	height: 30px;
+	font-family: 'Oswald', Helvetica, Verdana, Arial, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	font-size: 12px;
+	color: #ffffff;
+	float: right;
+	border: 0;
+	background-color: #5c5c5c;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#afaeae), to(#5c5c5c));
+    background-image: -webkit-linear-gradient(top, #afaeae, #5c5c5c);
+    background-image:    -moz-linear-gradient(top, #afaeae, #5c5c5c);
+    background-image:     -ms-linear-gradient(top, #afaeae, #5c5c5c);
+    background-image:      -o-linear-gradient(top, #afaeae, #5c5c5c);
+    -moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.note {
+	color: #FFF;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+a.noteBTN {
+	margin: 0 auto;
+	width: 200px;
+  	height: 36px;
+	background: #feca08;
+	-webkit-transition:background-color 0.3s linear;
+	display: block;
+	color: #000000;
+	padding-top: 5px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.noteBTN:hover {
+	background:#f5e67d;
+  	display: block;
+  	width: 200px;
+  	height: 36px;
+	outline: none; /* hide dotted outline in Firefox */
+}
+
+
+
+.facebookcomments {
+	overflow: auto;
+	height: 500px;
+	width: 530px;
+	padding-right: 15px;
+}
+
+.rsvpcomments {
+	overflow: auto;
+	height: 75px;
+	width: 530px;
+	padding-right: 15px;
+}
+
+.welcomecomments {
+	overflow: auto;
+	width: 580px;
+	/* height: 435px;
+	margin-top: 60px;*/
+	padding: 15px;
+}
+
+.welcomedesc {
+	line-height: 25px;
+}
+
+.comments {
+	width: 515px;
+	height: 600px;
+	margin: 0 auto;
+	background-color: aqua;
+}
+
+#notetitle {
+   font-family: 'Pathway Gothic One', sans-serif;
+   letter-spacing: 1px;
+   font-weight: 300;
+   font-size: 30px;
+   height: 36px;
+   text-transform: uppercase;
+   color: #feca08;
+   border-bottom: #999999 1px solid;
+   font-weight: 600;
+   margin-bottom: 5px;
+   
+}
+
+#welcometitle {
+   font-family: 'Pathway Gothic One', sans-serif;
+   letter-spacing: 1px;
+   font-weight: 300;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 32px;
+   height: 40px;
+   margin-bottom: 10px;
+   color: #feca08;
+   border-bottom: #FFF 1px solid;
+}
+
+#venuetitle {
+   font-family: 'Droid Serif', serif;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 14px;
+   margin-bottom: 0px;
+   color: #FFF;
+   text-transform: uppercase;
+}
+
+#commentstitle {
+   font-family: 'Pathway Gothic One', sans-serif;
+   text-transform: uppercase;
+    font-weight: 300;
+   font-size: 18px;
+   color: #feca08;
+}
+
+#note {
+	margin-top: 10px;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 21px;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+}
+
+#note a {
+	color: #feca08;
+	-webkit-transition:color 0.3s linear;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#note a:hover {
+	color: #f5e67d;
+}
+
+#welcome {
+	margin-top: 15px;
+	font-family: Georgia, serif;
+	color: #FFF;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#welcome a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #333333;
+	
+}
+
+#welcome a:hover {
+	color: #666666;
+	-webkit-transition:color 0.3s linear;
+}
+
+#modaldate {
+	font-family: 'Pathway Gothic One', sans-serif;
+	color: #FFF;
+	font-size: 18px;
+	position: relative;
+	top: 29px;
+	right: 2px;
+	text-align: right;
+}
+

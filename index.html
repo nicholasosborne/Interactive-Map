@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Down With Webster | Tour Map 2014</title>
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" href="css/leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/leaflet.ie.css" /><![endif]-->
+	<link rel="stylesheet" type="text/css" media="all" href="css/tour.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="fancybox/helpers/jquery.fancybox-thumbs.css" />
+	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.migrate.min.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+	<script type="text/javascript" src="js/tour.js"></script>
+	<script src="js/leaflet.js"></script>
+ 
+	<meta content='Down With Webster | Tour Map 2014' />
+	<meta content='Down With Webster is touring Canada and we want you to share your concert photos!' property='og:description' />
+	<meta content='http://tour.downwithwebster.com' property='og:url' />
+	<meta content='http://tour.downwithwebster.com/images/facebook.jpg' property='og:image' />				
+	<meta content='239354029576629' property='fb:app_id' />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Down With Webster | Tour Map 2014" />
+	<meta property="og:title" content="Down With Webster | Tour Map 2014" />
+ 
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34957279-14', 'downwithwebster.com');
+  ga('send', 'pageview');
+
+	</script>
+ 
+</head>  
+<body>
+
+
+<div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '239354029576629',
+          status     : true,
+          xfbml      : true
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+ 
+
+
+<!-- Start: container -->
+<div id="container">
+
+	<div id="legend"></div>
+	<div id="social">
+	
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://tour.downwithwebster.com">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+		<div class="fb-like" data-href="http://tour.downwithwebster.com" data-send="false" data-width="300" data-show-faces="false" data-colorscheme="dark"></div>
+	
+		<div class="itunes"><a href="https://itunes.apple.com/ca/album/party-for-your-life-deluxe/id792971086" class="itunesBTN" target="_blank"></a></div>
+		
+		<div class="merch"><a href="http://www.downwithwebster.com/store/" class="merchBTN" target="_blank">get Down With Webster merch</a></div>
+
+	</div> <!-- end social -->
+
+	<div id="map" class="close-reveal-modal"></div> <!-- width equals available horizontal space by default -->
+	
+
+	 <script type="text/javascript" src="js/map.php"></script>
+	<div id="logo"> <img src="images/dww_tour.png" alt="dww_tour" /> </div>
+
+	<!-- <div id="popup-dim"> </div> -->
+							
+	<!-- HIDDEN / POP-UP DIV -->
+	<div id="tour-pop-up" class="pop-up">
+		<div id="close-pop-up"> <img src="https://s3.amazonaws.com/cdn.universalmusic/universalmusic/lib/tour/close-black.png" alt="close" /> </div>
+		<div id="title"></div>
+		<div id="venue-map"></div>
+		<div id="tourdate-info">
+			<div id="date"></div>
+			<div id="location"></div>
+			<div id="venue"></div>
+			<div id="tweet-button"></div>
+			<div id="share-button"></div>
+			<div id="rsvp-button"></div>
+			<div id="fb-root"></div>
+			<div id="rsvp-message"><img src="https://s3.amazonaws.com/cdn.universalmusic/universalmusic/lib/tour/rsvpd-button.png" alt="Share" /></div>
+			</div>  <!-- end of tour date info -->
+		<div id="tickets"></div>
+	</div> <!-- end of tour pop up -->
+
+
+	<div id="welcomeModal" class="pop-up" style="display:block">
+	<div id="close-pop-up"> <img src="https://s3.amazonaws.com/cdn.universalmusic/universalmusic/lib/tour/close-black.png" alt="close" /> </div>
+	<div id="title">Down With Webster On Tour Now, 2014</div>
+		<div class="welcomecomments">
+		
+			<p id="welcome"> <b>Follow Down With Webster across Canada and share your tour photos</b> <br><br> <span class="welcomedesc">Every stop on the tour has it's own #hashtag. Tweet or Instagram your photos from the show using the city specific hashtag and check back here to see them included on the map! Click on any city to find its #hashtag and show information including links to buy tickets.</span> </p>
+			
+			
+			
+		</div>
+		<div id="closebtn"><a href="#" class="welcomeclose close-reveal-modal">close</a></div>
+	</div> <!-- end welcome modal -->
+
+</div> <!-- end container -->
+
+
+ </body>
+</html>

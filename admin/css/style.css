@@ -1,0 +1,35 @@
+ul {
+	padding-bottom: 50px;
+}
+
+ul li {
+	list-style-type: none;
+	list-style-image: none;
+	border-bottom: 1px solid #dadada;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.content {
+	margin-bottom: 15px;
+	line-height: 28px;
+}
+
+#content img {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.approve {
+	margin-right: 115px;
+}
+
+.reject {
+
+}
+
+.user {
+	color: #358cd5;
+	display: block;
+	text-decoration: underline;
+}

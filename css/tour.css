@@ -1,0 +1,254 @@
+/* CORE CSS STYLES FOR TOUR DATE SYSTEM */
+
+#tour {
+float: left;
+padding: 10px;
+font-size: 12px;
+}
+
+#am-tour {
+padding: 10px;
+}
+
+#am-tour table {
+width: 100%;
+text-align: left;
+}
+
+#am-tour th {
+padding-bottom: 7px;
+}
+
+#am-tour td {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+#am-tour tr:last-child {
+border-bottom: none;
+}
+
+.button {
+position: relative;
+display: block;
+padding: 3px 10px;
+text-decoration: none;
+width: 65px;
+text-align: center;
+}
+
+.trigger {
+position: relative;
+display: block;
+padding: 3px 10px;
+text-decoration: none;
+width: 65px;
+text-align: center;
+}
+
+#am-tour a:hover {
+text-decoration: underline;
+}
+
+.pop-up {
+display: none;
+position: fixed;
+width: 610px;
+padding: 20px;
+background: rgba(0,0,0,0.7);
+left: 50%;
+margin-left: -325px;
+top:100px;
+z-index: 99999;
+-moz-box-shadow: 0 10px 20px rgba(0,0,0,.1);
+-webkit-box-shadow: 0 10px 20px rgba(0,0,0,.1);
+box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+
+#popup-dim {
+background: rgba(0,0,0,0.7);
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 99999;
+}
+
+#tourdate-info {
+float: left;
+margin: 10px 0 2px 0;
+width: 450px;
+}
+
+#close-pop-up {
+position: absolute;
+top: 20px;
+right: -36px;
+width: 16px;
+margin: 0;
+cursor: pointer;
+padding: 9px 10px 7px;
+}
+
+#tickets {
+float: right;
+margin: 35px 2px 0 0;
+}
+
+#ticket-link {
+padding: 12px 20px !important;
+text-transform: uppercase !important;
+text-decoration: none !important;
+}
+
+#ticket-link:hover {
+text-decoration: none !important;
+}
+
+.soldout {
+margin-top: 3px;
+text-transform: uppercase;
+display: inline;
+padding: 3px 10px;
+text-decoration: none;
+width: 100%;
+text-align: right;
+}
+
+#sold-out {
+font-size: 18px !important;
+padding: 12px 20px !important;
+text-transform: uppercase !important;
+text-decoration: none !important;
+}
+
+#date {
+float: left;
+clear: both;
+}
+
+#location {
+float: left;
+clear: both;
+}
+
+#venue {
+float: left;
+clear: both;
+}
+
+#comments {
+float: left;
+clear: both;
+}
+
+#share-button {
+float: left;
+margin-top: 10px;
+margin-left: 5px;
+}
+
+#rsvp-button {
+float: left;
+margin-top: 10px;
+margin-left: 5px;
+}
+
+#rsvp-message {
+display: none;
+float: left;
+margin-top: 10px;
+margin-left: 5px;
+}
+
+.twitter-tour-button {
+float: left;
+clear: both;
+margin-top: 10px;
+}
+
+.tourinfo {
+font-size: 14px;
+}
+
+.tourinfo-heading {
+font-size: 16px;
+text-transform: uppercase;
+}
+
+
+
+/* TOUR INFO POPUP */
+
+#close-pop-up {
+	background: #feca08;
+}
+
+#tourdate-info {
+	width: 440px !important;
+}
+
+#close-pop-up:hover {
+	background: #f5e67d;
+}
+
+#ticket-link {
+	font-family: 'Pathway Gothic One', sans-serif;
+	letter-spacing: 1px;
+	font-size: 18px !important;
+	background: #feca08 !important;
+	color: black !important;
+}
+
+#ticket-link:hover {
+	background: #f5e67d !important;
+}
+
+.soldout {
+	background: #FFF;
+	color: #000;
+}
+
+#sold-out {
+	background: #666 !important;
+	color: white !important;
+}
+
+.tourinfo-heading {
+	font-family: 'Pathway Gothic One', sans-serif;
+	letter-spacing: 1px;
+	font-size: 20px !important;
+	line-height: 24px !important;
+	color: #d0ac11;
+}
+
+.tourinfo {
+	color: #FFF;
+	font-family: Georgia, serif;
+	font-size: 18px;
+}
+
+#title {
+	font-family: 'Pathway Gothic One', sans-serif;
+	letter-spacing: 1px;
+	color: #feca08;
+	font-size: 24px;
+	line-height: 24px;
+	margin: 0 0 10px 0;
+}
+
+#welcomeModal #title{
+	font-family: 'Pathway Gothic One', sans-serif;
+	letter-spacing: 1px;
+	color: #feca08;
+	font-size: 24px;
+	line-height: 24px;
+	margin: 0 0 10px 0;
+	width: 100%;
+	text-align: center;
+	
+}
+
+
